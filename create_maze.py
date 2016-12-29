@@ -12,8 +12,8 @@ number_of_mazes = args.number
 height = args.complexity
 
 while True:
-    if height < 2 or height > 90:
-        height = raw_input("Complexity of maze (2-90 [above 50 might cause crashes]): ")
+    if height < 2 or height > 1000:
+        height = raw_input("Complexity of maze (2-1000): ")
         height = int(height) if len(height) > 0 else 0
     else:
         break

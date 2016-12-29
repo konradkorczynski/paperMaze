@@ -9,9 +9,7 @@ class MazePainter:
     @staticmethod
     def paint_maze(maze, number):
         border = 40
-        wall_thickness = 120 / float(maze.height)
-        if wall_thickness < 4:
-            wall_thickness = 4
+        wall_thickness = 200 / float(maze.height)
         filename = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         a4_width, a4_height = 3508, 2480
         cell_height = (a4_height - border) / float(maze.height)
